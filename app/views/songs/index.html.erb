@@ -1,12 +1,11 @@
 <h1>Songs</h1>
 <% link_to 'Add Songs', new_song_path %>
-
+<h2><%= @songs.length <= 0 ? "No songs" : '' %></h2>
 
 <ul>
     <% @songs.each do |song| %>
         <li>
-        <%= link_to song.full_song, song %>
-
+        <%= link_to song.title, song %>
         </li>
     <% end %> 
     </ul>
