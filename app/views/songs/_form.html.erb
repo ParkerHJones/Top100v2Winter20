@@ -1,0 +1,5 @@
+<%= form_for @song do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title, required: true, placeholder: 'song title' %>
+    <%= f.submit %>
+ <% end %>
